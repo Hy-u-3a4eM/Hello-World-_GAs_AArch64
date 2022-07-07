@@ -15,10 +15,12 @@ _start:
 .Lfunc_end0:
 	.size	_start, .Lfunc_end0-_start
 
+
 	.type	Hello_World_,@object
 	.data
 	.globl	Hello_World_
 Hello_World_:
 	.asciz	"Hello, World!\n"
+
 Hello_World_len = . - Hello_World_
 
