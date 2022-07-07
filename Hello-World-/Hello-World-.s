@@ -5,7 +5,7 @@
 _start:
 	mov	x0, xzr
 	ldr	x1, =Hello_World_
-	ldr	x2, =Hello_World_
+	mov	x2, #Hello_World_len
 	mov	w8, #64
 	svc	#0
 
@@ -20,5 +20,5 @@ _start:
 	.globl	Hello_World_
 Hello_World_:
 	.asciz	"Hello, World!\n"
-	.size	Hello_World_, 15
+Hello_World_len = . - Hello_World_
 
