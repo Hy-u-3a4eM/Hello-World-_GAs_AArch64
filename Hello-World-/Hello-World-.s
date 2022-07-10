@@ -4,7 +4,6 @@
 	.type	_start,@function
 _start:
 	mov	x0, #1
-	//ldr	x1, =Hello_World_
 	adrp	x1, Hello_World_
 	add	x1, x1, :lo12:Hello_World_
 	mov	x2, #Hello_World_len
